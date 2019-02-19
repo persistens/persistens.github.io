@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="center-align">
+        <p>Todoboard is now authorized.</p>
+        <div class="center-align">
+            <button title="Back to Todoboard" href="" onclick="backToTodoboard();return false;">
+                Back to Todoboard
+            </button>
+        </div>
+    </div>
+    <script language="javascript">
+        function backToTodoboard(){
+            document.location.href = "com.pierrejacquier.todoboard://todoist/" + location.search;
+        };
+    </script>
+</body>
+
+</html>

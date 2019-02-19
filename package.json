@@ -1,0 +1,24 @@
+{
+  "name": "persistens.com",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-i18n-static": "^0.1.13",
+    "grunt-parallel": "^0.5.1",
+    "grunt-replace": "^1.0.1",
+    "grunt-webp-compress": "0.0.4"
+  },
+  "dependencies": {
+    "grunt-express": "^1.4.1"
+  },
+  "scripts": {
+    "serve": "grunt serve",
+    "build": "grunt",
+    "deploy": ""
+  }
+}

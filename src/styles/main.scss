@@ -1,0 +1,86 @@
+@import 'basscss';
+@import 'colors';
+
+html {
+  font-family: 'Share Tech', serif;
+}
+
+.mono {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+  background: $primary-color;
+}
+
+header {
+  background: $light-color;
+}
+
+#links {
+  text-transform: uppercase;
+}
+
+#links p {
+  opacity: $secondary-black-opacity;
+}
+
+#links p.active {
+  opacity: $primary-black-opacity;;
+}
+
+.secondary-txt {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+.no-dec {
+  text-decoration: none;
+}
+
+.secondary-white-opacity {
+  opacity: $secondary-white-opacity;
+}
+
+.primary-white-opacity {
+  opacity: $primary-white-opacity;
+}
+
+.white {
+  color: white;
+}
+
+$team-width: 24rem;
+
+#team {
+  width: $team-width;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -$team-width / 2;
+  background: $light-color;
+  border-radius: 2rem 2rem 0 0;
+}
+
+#mail {
+  color: $secondary-color;
+  padding: 1rem 1.5rem;
+  background: $tertiary-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 831px) {
+  #team {
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    margin-top: 2rem;
+    left: auto;
+    margin: auto;
+  }
+
+  .sm-mt0 {
+    margin-top: 0 !important;
+  }
+}

@@ -1,0 +1,17 @@
+$primary-color: #2F80ED;
+$primary-dark-color: darken($primary-color, 10%);
+$primary-tint-color: lighten($primary-color, 10%);
+
+$secondary-color: #F2C94C;
+$tertiary-color: #333333;
+$light-color: #FAFAFA;
+
+$primary-black-opacity: 0.87;
+$secondary-black-opacity: 0.54;
+$disabled-black-opacity: 0.38;
+
+$primary-white-opacity: 1.00;
+$secondary-white-opacity: 0.70;
+$disabled-white-opacity: 0.50;
+
+$disabled-text-dark: rgba(255, 255, 255, $disabled-white-opacity);
