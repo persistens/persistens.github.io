@@ -34,19 +34,30 @@ module.exports = function (grunt) {
             dest: path.join(project.dist, project.assets),
             filter: 'isFile',
           },
-          // {
-          //   expand: true,
-          //   flatten: true,
-          //   src: [path.join(project.src, project.todoboard, '**')],
-          //   dest: path.join(project.dist, project.todoboard),
-          //   filter: 'isFile',
-          // },
           {
             flatten: true,
             expand: true,
             src: path.join(project.src, 'CNAME'),
             dest: path.join(project.dist, '/'),
           },
+          {
+            flatten: true,
+            expand: true,
+            src: path.join(project.src, 'sitemap.xml'),
+            dest: path.join(project.dist, '/'),
+          },
+          {
+            flatten: true,
+            expand: true,
+            src: path.join(project.src, 'google1e6df2694e0730ed.html'),
+            dest: path.join(project.dist, '/'),
+          },
+          {
+            flatten: true,
+            expand: true,
+            src: path.join(project.src, 'BingSiteAuth.xml'),
+            dest: path.join(project.dist, '/'),
+          }
         ],
       },
     },
